@@ -1,0 +1,1010 @@
+/* Sticky footer styles */
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    /* Margin bottom by footer height */
+    /*margin-bottom: 60px;*/
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-color: #f5f5f5;
+}
+.container .text-muted {
+    margin: 20px 0;
+}
+.page-content {
+    background-color: white;
+}
+.license-data {
+    font-size: 0.9em;
+    color: black;
+}
+a.mdl-layout__tab, a.mdl-layout__tab:hover {
+    text-decoration: none;
+}
+.nuget-toolbar .mdl-card__menu {
+    right: -20px;
+    top: -10px;
+}
+.mdl-card:not(.login-control) {
+    width: 100%;
+    min-width: 100%;
+    width: unset;
+    min-width: unset;
+}
+.mdl-card.login-control {
+    min-width: 600px;
+}
+/*.mdl-layout__tab-bar {
+    background-color: green;
+}*/
+.resolved-ticket {
+    background-color: green;
+    width: 18px;
+    height: 30px;
+    display: block;
+    color: white;
+    line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+.not-resolved-ticket {
+    background-color: #f0ad4e;
+    width: 18px;
+    height: 30px;
+    display: block;
+    color: white;
+    line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+.ticket.mdl-list__item.ticket {
+    background-color: white;
+    border-bottom: solid 1px lightgrey;
+    line-height: 20px;
+    width: 100%;
+    cursor: pointer;
+}
+.ticket-date {
+    font-style: italic;
+    font-size: 0.9em;
+}
+.ticket-tag {
+    background-color: grey;
+    color: white;
+    border-radius: 6px;
+    padding: 3px 4px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+.tag-holder {
+    margin-left: 10px;
+    display: inline-block;
+}
+.completed-ticket {
+    color: green;
+}
+.v-a-middle{
+    vertical-align: middle;
+}
+h5.modal-title, h6.modal-title {
+    margin: unset;
+}
+.modal-dialog .mdl-textfield {
+    display: block;
+    width: 100%;
+}
+/*#new-ticket-form button {
+    display: block;
+    margin-left: auto;
+}*/
+.current-ticket .mdl-card__supporting-text {
+    color: black;
+    font-size: initial;
+    width: 100%;
+}
+.current-ticket .ticket-date, .current-ticket .ticket-tags {
+    margin-bottom: 8px;
+}
+.current-ticket .ticket-description {
+    margin-bottom: 12px;
+}
+.current-ticket .ticket-answers {
+    margin-left: 12px;
+    margin-top: 40px;
+}
+.ticket-answer {
+    display: flex;
+}
+.ticket-answer .answer {
+    flex: 1;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 4px;
+}
+.ticket-answer .answer-date {
+    margin-top: 4px;
+    font-style: italic;
+}
+
+.ticket-edit {
+    background-color: #fafafa;
+    padding: 10px;
+}
+
+.ticket-ans {
+    margin-top: 25px;
+}
+
+.ticket-ans button {
+    margin-top: 8px;
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-image: url(http://placehold.it/32x32);
+}
+.new-ticket-button {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    color: white !important;
+    z-index: 1000;
+}
+.login-dropdown .dropdown-menu {
+    left: -250px;
+    right: -25px;
+}
+.logout-dropdown .dropdown-menu {
+    right: 0;
+    left: auto;
+    white-space: nowrap;
+    padding: 8px;
+}
+.logout-dropdown .dropdown-menu a {
+    color: #aaa;
+}
+.login-dropdown .dropdown-menu .input-name, .mdl-card.login-control .input-name {
+    flex: 1;
+}
+.login-dropdown .dropdown-menu .input-holder, .logout-dropdown .dropdown-menu .input-holder, .mdl-card.login-control .input-holder {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 12px 8px;
+}
+.login-dropdown .dropdown-menu .input-holder.login, .logout-dropdown .dropdown-menu .input-holder.logout, .mdl-card.login-control .input-holder.login {
+    justify-content: flex-end;
+}
+.logout-btn {
+    padding: 0 8px;
+}
+.logout-caret {
+    font-size: 16px;
+    vertical-align: middle;
+}
+.subscriptions {
+    width: auto;
+    margin: 0;
+    padding: 28px;
+    min-height: unset;
+}
+
+.nuget-explain-card {
+    margin-top: 8px;
+}
+.ticket-list {
+    margin-left:    0;
+}
+.completed-ticket {
+    color: green;
+}
+.number-of-comments {
+    margin-left: 8px;
+}
+
+.ticket-grid {
+    padding:    0;
+}
+.ticket-card {
+    margin:     0;
+}
+
+.subscriptions .subscription-row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+}
+main.mdl-layout__content .mdl-layout__tab-panel {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.ticket-tools {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 16px;
+}
+.ticket-title {
+    flex: 1;
+}
+.mdl-card.login-control {
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex !important;
+}
+
+.second-level-navigation {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-control .mdl-card__supporting-text {
+    margin: auto;
+}
+
+.modal h4 {
+    font-size: initial;
+    line-height: initial;
+    -moz-osx-font-smoothing: grayscale;
+    margin: unset;
+}
+.modal h3, .modal h4 {
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-weight: 400;
+}
+.modal h1, .modal h2, .modal h3, .modal h4, .modal h5, .modal h6, .modal p {
+     padding: unset;
+}
+
+#md-help pre {
+    display:            block;
+    padding:            9.5px;
+    margin:             0 0 10px;
+    font-size:          13px;
+    line-height:        1.42857143;
+    color:              #333;
+    word-break:         break-all;
+    word-wrap:          break-word;
+    background-color:   #f5f5f5;
+    border:             1px solid #ccc;
+    border-radius:      4px;
+}
+
+.ticket-edit .mdl-textfield {
+    margin-bottom:  12px;
+}
+
+button+button {
+    margin-left:    4px !important;
+}
+#edit-ticket-name {
+    width:          100%;
+}
+.ticket-edit .mdl-textfield {
+    width:          100%;
+}
+
+.answer-toolbar:first-child {
+    margin-left:    40px;
+}
+.answer-toolbar {
+    color:          #aaa !important;
+    margin-right:   4px;
+    cursor:         pointer;
+}
+
+.apps-dropdown {
+    margin-left:    8px;
+    height:         28px;
+    line-height:    28px;
+}
+
+.apps-dropdown .mdi:before {
+    font-size:      28px;
+}
+
+.apps-dropdown .dropdown-menu div {
+    text-align:     right;
+}
+
+.ticket-list-name {
+    margin-bottom:  3px;
+    font-weight:    bold;
+}
+.ticket-positioner {
+    margin-left:    10px;
+}
+
+.answer-level-1 {
+    margin-left:    10px;
+}
+.answer-level-2 {
+    margin-left:    20px;
+}
+.answer-level-3 {
+    margin-left:    30px;
+}
+.answer-level-4 {
+    margin-left:    40px;
+}
+.answer-level-5 {
+    margin-left:    50px;
+}
+.answer-level-6 {
+    margin-left:    60px;
+}
+
+.ticket-answers .children {
+    margin-top:     10px;
+    margin-bottom:  10px;
+}
+
+.subscription-row .subscription-type {
+    flex:           1;
+}
+
+.modal .modal-content {
+    max-height:     calc(100vh - 60px);
+}
+.modal .modal-content .modal-body {
+    overflow-y:     auto;
+}
+.license-data > div {
+    margin-bottom:  8px;
+}
+.edit-comment, .edit-email {
+    width:          100%;
+}
+.nuget-toolbar {
+    position:       relative;
+}
+
+.answer-meta {
+    display:        flex;
+}
+.answer-meta .answer-user {
+    flex:           1;
+}
+
+.login-title {
+    font-size:      34px;
+    height:         34px;
+    line-height:    34px;
+    width:          100%;
+}
+.centered-text {
+    text-align: center;
+}
+.login-page {
+    background-color: #fafafa;
+}
+.other-options {
+    width: calc(100% - 16px);
+    text-align: right;
+    margin: 8px;
+}
+.other-options a, .other-options a:hover, .other-options a:visited {
+    display: block;
+    color: #427fed !important;
+    text-decoration: none;
+    cursor: pointer;
+}
+.input-holder .err {
+    width: 100%;
+    color: red;
+    text-align: right;
+}
+.inp-with-error {
+    border-color: red;
+}
+.input-name {
+    line-height: 27px;
+}
+.error {
+    color: red;
+    margin: 8px;
+}
+.helper {
+    margin: 8px;
+}
+.custom-checkbox {
+    width: unset;
+}
+.mdl-layout__drawer > .mdl-layout-title {
+    background-color: #3F51B5;
+    color: white;
+    line-height: 48px;
+    padding-left: 0;
+    text-align: center;
+}
+.mdl-layout__drawer-button {
+    margin:0;
+}
+.mdl-layout__header {
+    min-height: 48px;
+}
+.mdl-layout__header-row .mdl-layout-title {
+    padding-left: 20px;
+}
+
+.c-d-button {
+    color: rgb(255,255,255);
+    background-color: inherit;
+    margin: 0;
+    display: block !important;
+    line-height: 60px;
+    height: 48px;
+    width: 48px;
+    border: 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.ticket .mdl-checkbox {
+    margin-left: 10px;
+    width: unset;
+}
+
+.custom-drawer{
+    width: 0;
+}
+.custom-drawer.active-drawer {
+    width: 240px;
+}
+.mdl-layout__content.no-drawer{
+    margin-left: 0 !important;
+}
+
+.mdl-layout-title a {
+    color: white;
+    cursor: pointer;
+    letter-spacing: 0.36px;
+    font-size: 18px;
+}
+.mdl-card {
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+.mdl-layout-title a, .mdl-layout-title a:hover, .mdl-layout-title a:visited {
+    text-decoration: none;
+}
+.mdl-layout__content {
+    background-color: #fafafa;
+}
+.mdl-layout__tab {
+    letter-spacing: 0.36px;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+}
+.logged-in .dropdown > span {
+    letter-spacing: 0.36px;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+}
+
+.login-control .mdl-card__supporting-text {
+    color: black;
+}
+
+.input-holder {
+    background-color: white
+}
+
+.div-header {
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
+.mdl-list {
+    padding: 0;
+}
+.mdl-layout__drawer {
+    border-right: 0;
+}
+.mdl-textfield {
+    padding: 0;
+}
+.modal-body .mdl-textfield {
+    padding: 20px 0;
+}
+label.mdl-textfield__label {
+    margin-bottom: 0;
+}
+.mdl-textfield__label {
+    top: 4px;
+}
+.modal-body .mdl-textfield__label {
+    top: 24px;
+}
+.mdl-textfield__label:after {
+    bottom: 0;
+}
+.modal-body .mdl-textfield__label:after{
+    bottom: 20px;
+}
+.mdl-textfield:focus, .mdl-textfield input:focus, .mdl-textfield select:focus {
+    outline: none;
+}
+
+.completed-ticket {
+    color: green;
+}
+
+.modal .CodeMirror-scroll {
+    max-height: calc(100vh - 340px) !important;
+}
+.ticket-a {
+    position: relative;
+}
+.is-solution {
+    position: absolute;
+    left: -10px;
+    width: 5px;
+    top: 0;
+    bottom: 0;
+    background-color: green;
+}
+
+.license-card .mdl-card__title {
+    display: flex;
+    flex-direction: column;
+}
+
+.license-card .mdl-card__title .mdl-card__title-text {
+    align-self: flex-start;
+}
+
+.pageloader {
+    width: 100%;
+    width: unset;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.hidden-away .new-ticket-button {
+    display: none;
+}
+
+/* Transitioning */
+.mdl-layout__content {
+    transition: margin-left 0.3s linear;
+}
+
+.custom-drawer {
+    transition: width 0.3s linear;
+}
+
+/* **************** */
+
+.support-scroller {
+    max-height: calc(100vh - 140px);
+    overflow: auto;
+}
+
+.page-content {
+    -ms-overflow-y: auto;
+    overflow: hidden;
+    max-height: 100%;
+    min-height: 100%;
+    height: 100%;
+}
+
+.hidden-away {
+    position: relative;
+}
+
+.hidden-away > div {
+    position: absolute;
+    left: 100vw;
+    top: 0;
+}
+
+#error-snackbar {
+    width: 100%;
+    max-width: unset;
+}
+
+.primary-section {
+    align-self: flex-start;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.secondary-section {
+    align-self: flex-end;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.primary-section .mdl-layout__tab, .secondary-section .mdl-layout__tab {
+    color: rgb(63,81,181);
+}
+
+.mdl-layout__drawer {
+    background-color: white;
+}
+
+/*.mdl-layout:not(.is-small-screen) .mdl-layout__drawer {
+    top: 48px !important;
+    height: calc(100% - 48px) !important;
+}*/
+
+
+/*.mdl-layout:not(.is-small-screen) .mdl-layout__header .mdl-layout__drawer-button {
+    display: none;
+}*/
+
+/*.mdl-layout:not(.is-small-screen) .mdl-layout__drawer .mdl-layout-title {
+    display: none;
+}*/
+
+.mdl-layout:not(.is-small-screen) .mdl-layout__header {
+    margin-left: 0 !important;
+    width: 100% !important;
+}
+
+.mdl-layout:not(.is-small-screen) .mdl-layout__drawer .mdl-navigation {
+    display: none;
+}
+
+.sidepanel-link {
+    text-decoration: none;
+    color: rgb(63,81,181);
+    outline-width: 0;
+    letter-spacing: 0.36px;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    margin: 0;
+    border: none;
+    padding: 0 24px;
+    float: left;
+    position: relative;
+    display: block;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+.sidepanel-link-2 {
+    text-decoration: none;
+    color: rgb(63,81,181);
+    outline-width: 0;
+    letter-spacing: 0.36px;
+    font-weight: normal;
+    font-size: 14px;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    margin: 0;
+    border: none;
+    padding: 0 16px;
+    float: left;
+    position: relative;
+    display: block;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    height: 32px;
+    line-height: 32px;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+.sidepanel-link:hover, .sidepanel-link-2:hover {
+    text-decoration: none;
+}
+
+/* Payment page */
+.payment-wssp, .payment-paypal, .payment-subscription, .payment-basic-info {
+    margin-left: 16px;
+}
+.payment-wssp > div, .payment-paypal > div, .payment-subscription > div, .payment-basic-info > div {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+.mdl-card.payment-item {
+    padding: 16px;
+}
+.payment-basic-info {
+    margin-bottom: 10px;
+}
+.payment-item .material-icons {
+    display: inline-block;
+    font-size: inherit;
+    text-rendering: auto;
+    line-height: inherit;
+    -webkit-font-smoothing: antialiased;
+}
+/* #*# */
+
+.mdl-button--colored .mdi {
+    color: white;
+}
+
+.invoices-holder {
+    padding: 10px;
+}
+.dl-button {
+    margin-left: auto;
+}
+
+.invoices table {
+    width: 100%;
+}
+
+
+.invoice-table-holder, .mdl-card.login-control.invoices-holder {
+    /*
+        width: fit-content;
+        - this would be so amazing, if it would work...
+        - FF supports it with the moz- prefix
+        - IE and EDGE aren't supporting it :(;
+        - fallback solution:;
+    */
+    display: table !important;
+}
+
+.invoice-table-holder.admin-table, .invoice-table-holder.admin-table table {
+    width: 100%;
+}
+
+.sidepanel-link.active {
+    border-left: solid 4px rgb(63, 81, 181);
+    padding-left: 20px;
+}
+.sidepanel-link-2.active {
+    border-left: solid 4px rgb(63, 81, 181);
+    margin-left: -20px;
+    padding-left: 32px;
+}
+
+.answer-meta .answer-content {
+    flex: 1;
+}
+
+.ticket-a .indicator, .ticket .indicator {
+    /*visibility:         hidden;*/
+    opacity:            0;
+    margin-top:         4px;
+    width:              8px;
+    height:             8px;
+    border-radius:      50%;
+    background-color:   red;
+    transition:         opacity 3s linear;
+}
+
+.ticket-a.unread-comment .indicator, .ticket.changed-ticket .indicator {
+    /*visibility: visible;*/
+    opacity: 1;
+}
+
+.mdl-navigation a.mdl-navigation__link {
+    color: white;
+}
+
+.mdl-layout__header-row .mdl-navigation a {
+    color: white
+}
+
+.mdl-layout__header-row .mdl-navigation a:hover {
+    text-decoration: none;
+}
+
+.login-drop {
+    padding-right: 0px !important;
+}
+
+
+.mdl-layout {
+    overflow-y: hidden;
+}
+
+body {
+    overflow-y: hidden;
+}
+
+pre, pre > * {
+    font-family: monospace !important;
+}
+
+.login-drop .material-icons {
+    margin-top: -1px;
+}
+
+.secondary-navbar__list-item .columns.row {
+    padding: 15px;
+}
+
+.secondary-navbar__list-item .columns.row .mdl-textfield {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.mdl-menu__item {
+    padding-left: 5px !important;
+}
+
+.dl-button {
+    float: right;
+}
+
+.mdl-textfield label {
+    display: unset;
+}
+
+.mdl-selectfield__box-value {
+    text-align: left;
+}
+
+button:focus {
+    outline: none;
+}
+
+.mdl-selectfield__arrow-down__container {
+    right: 10px !important;
+}
+
+.modal-header {
+    display: flex;
+}
+
+.modal-title {
+    flex: 1;
+}
+
+.modal-body .mdl-selectfield {
+    width: 100%;
+}
+
+.mdl-selectfield.is-focused {
+    z-index: 1200;
+}
+
+/* Mobile */
+
+.is-small-screen .mdl-layout-title {
+    display: none;
+}
+.is-small-screen .logged-in, .is-small-screen .logged-out {
+    flex: 1;
+    text-align: end;
+}
+.is-small-screen .login-dropdown .dropdown-menu {
+    left: auto;
+    right: 0;
+}
+.is-small-screen .logout-btn {
+    display: block;
+}
+
+.mdl-layout.is-small-screen .mdl-layout-spacer_ {
+    flex: 1
+}
+
+@media screen and (max-width: 1024px) {
+    .mdl-layout__header .mdl-layout__drawer-button {
+        margin: 0;
+    }
+    .login-control.mdl-card {
+        min-width: 400px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .ticket-answer .avatar {
+        display: none;
+    }    
+    .answer-toolbar:first-child {
+        margin-left: 0;
+    }
+    .answer.md-rendered {
+        margin-left: 0;
+    }
+    .subscriptions .subscription-row {
+        flex-direction: column;
+    }
+    .subscription-row .subscription-type {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 8px;
+    }
+    .subscription-row .credit-section {
+        flex: 1;
+    }
+    .subscription-type span {
+        flex: 1;
+        margin-bottom: 8px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .invoice-table-holder {
+        display: unset !important;
+    }
+    .mdl-card.login-control.invoices-holder {
+        display: flex;
+    }
+
+    .invoices-holder .invoice-table-holder table.mdl-data-table {
+      border: 0 !important;
+      position: unset !important;
+      width: 100% !important;
+    }
+
+    .invoices-holder .invoice-table-holder table.mdl-data-table thead {
+      display: none !important;
+    }
+
+    .invoices-holder .invoice-table-holder table.mdl-data-table tr {
+      margin-bottom: 10px !important;
+      display: block !important;
+      border-bottom: 2px solid #ddd !important;
+      position: unset !important;
+      height:unset !important;
+    }
+
+    .invoices-holder .invoice-table-holder table.mdl-data-table td {
+      display: block !important;
+      text-align: right !important;
+      font-size: 13px !important;
+      border-bottom: 1px dotted #ccc !important;
+      padding: 5px !important;
+      position: unset !important;
+    }
+
+    .invoices-holder .invoice-table-holder table.mdl-data-table td:last-child {
+      border-bottom: 0 !important;
+    }
+
+    .invoices-holder .invoice-table-holder table.mdl-data-table td:before {
+      content: attr(data-label) !important;
+      float: left !important;
+      text-transform: uppercase !important;
+      font-weight: bold !important;
+    }
+} 
+
+@media screen and (max-width: 480px) {
+    .mdl-card.login-control {
+        min-width: 300px;
+        width: auto;
+    }
+    .login-title {
+        font-size: 24px;
+    }
+    .mdl-card.login-control .input-holder {
+        flex-direction: column;
+    }
+    .input-holder select {
+        width: 100%;
+    }
+    .input-holder .err {
+        text-align: left;
+    }
+}
